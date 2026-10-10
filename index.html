@@ -43,13 +43,22 @@
         html:not(.dark) header {
             background-color: rgba(255, 255, 255, 0.85);
         }
+        html:not(.dark) .tools-section-bg {
+            background-color: #f1f5f9;
+        }
         html:not(.dark) .nav-card {
             background-color: #ffffff;
-            border-color: #e2e8f0;
+            border-color: #cbd5e1;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
         }
         html:not(.dark) .nav-card-inactive {
-            background-color: #f1f5f9;
-            border-color: #e2e8f0;
+            background-color: #ffffff;
+            border-color: #cbd5e1;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        html:not(.dark) .disabled-btn {
+            background-color: #e2e8f0 !important;
+            color: #64748b !important;
         }
         html:not(.dark) .heading-text {
             color: #0f172a;
@@ -88,6 +97,7 @@
             </div>
         </div>
     </header>
+
     <section id="home" class="relative overflow-hidden pt-20 pb-24 lg:pt-32 lg:pb-36">
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none"></div>
         
@@ -106,7 +116,7 @@
         </div>
     </section>
 
-    <section id="tools" class="py-20 bg-slate-950/40 dark:bg-slate-950/40">
+    <section id="tools" class="py-20 tools-section-bg bg-slate-950/40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl sm:text-4xl font-bold heading-text text-white mb-4">Available & Upcoming Tools</h2>
@@ -139,7 +149,7 @@
                     </div>
                 </div>
 
-                <div class="nav-card-inactive group bg-slate-800/30 border border-slate-700/50 rounded-2xl p-6 flex flex-col justify-between opacity-80 relative overflow-hidden">
+                <div class="nav-card-inactive group bg-slate-800/30 border border-slate-700/50 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
                     <div>
                         <div class="flex items-center justify-between mb-6">
                             <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-500 dark:text-amber-400 flex items-center justify-center text-2xl">
@@ -155,13 +165,13 @@
                         </p>
                     </div>
                     <div>
-                        <button disabled class="w-full py-3 px-4 rounded-xl bg-slate-700/50 text-slate-400 font-semibold text-sm flex items-center justify-center gap-2 cursor-not-allowed">
+                        <button disabled class="disabled-btn w-full py-3 px-4 rounded-xl bg-slate-700/50 text-slate-400 font-semibold text-sm flex items-center justify-center gap-2 cursor-not-allowed">
                             <i class="fa-solid fa-lock text-xs"></i> Coming Soon
                         </button>
                     </div>
                 </div>
 
-                <div class="nav-card-inactive group bg-slate-800/30 border border-slate-700/50 rounded-2xl p-6 flex flex-col justify-between opacity-80 relative overflow-hidden">
+                <div class="nav-card-inactive group bg-slate-800/30 border border-slate-700/50 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
                     <div>
                         <div class="flex items-center justify-between mb-6">
                             <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-500 dark:text-blue-400 flex items-center justify-center text-2xl">
@@ -177,7 +187,7 @@
                         </p>
                     </div>
                     <div>
-                        <button disabled class="w-full py-3 px-4 rounded-xl bg-slate-700/50 text-slate-400 font-semibold text-sm flex items-center justify-center gap-2 cursor-not-allowed">
+                        <button disabled class="disabled-btn w-full py-3 px-4 rounded-xl bg-slate-700/50 text-slate-400 font-semibold text-sm flex items-center justify-center gap-2 cursor-not-allowed">
                             <i class="fa-solid fa-lock text-xs"></i> Coming Soon
                         </button>
                     </div>
